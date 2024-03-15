@@ -1,0 +1,7 @@
+No, for only assignment operations, the constructor is not called.
+
+When you assign an already constructed object to another object of the same type, it's the assignment operator that is invoked, not the constructor.
+
+However, if the assignment involves a different type, a conversion constructor (if available) might be called to convert the assigned object to the type of the variable receiving the assignment.
+
+But if both the object being assigned and the variable receiving the assignment are of the same type, only the assignment operator is called.
